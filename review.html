@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Your college</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/review.css">
+</head>
+
+<body>
+
+
+    <nav id="mynav" class="">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">COLLEGES</a></li>
+            <li><a href="#">NIRF</a></li>
+            <li><a href="#">REVIEWS</a></li>
+            <li><a href="#">CONTACT US</a></li>
+        </ul>
+        <div class="line"></div>
+    </nav>
+
+
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ratione adipisci aperiam rem unde corporis
+        voluptates nihil! Officiis doloremque optio cupiditate mollitia porro vitae repellendus, error similique,
+        blanditiis nesciunt architecto?
+    </h2>
+
+    <div class="boxr">
+        <label for="college">Choose Your College type</label>
+
+        <select name="colleges" id="colleges">
+            <option value="IIT">Indian institute of technology</option>
+            <option value="NIT">National institute of technology</option>
+            <option value="IIIT">Indian institute of information technology</option>
+        </select>
+
+        <label for="collegename">Choose Your College name</label>
+
+        <select name="clgname" id="clgname">
+           
+
+<option value="IIT">College name</option>
+        
+          
+        </select>
+<br><br>
+        <form action="/review" method="POST">
+            <input type="text" name="name" placeholder="Your name (optional)" id="">
+            <input required type="number" name="year" placeholder="Year" id="">
+            <textarea name="review" id="" cols="30" rows="10" placeholder="Give review"></textarea>
+            <button>Submit</button>
+        </form>
+    </div>
+    <br><br><br><br><br>
+
+</body>
+<script src="/js/index.js"></script>
+
+
+</html>

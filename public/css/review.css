@@ -1,0 +1,59 @@
+h2{
+    position: relative;
+    width: 500px;
+    font-size: 22px;
+    color: white;
+    box-sizing: border-box;
+    background-color: rgba(1, 1, 1, 0.5);
+    z-index: +1;
+    top: 150px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 2px 5px rosybrown;
+    animation: divani 2s linear infinite;
+}
+
+form{
+    position: relative;
+}
+input{
+    height: 35px;
+    margin: 5px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+    padding: 2px;
+}
+
+
+.boxr{
+    top: 200px;
+    position: relative;
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: auto;
+    z-index: +1;
+    color: rgb(248, 248, 248);
+    padding: 20px;
+    box-shadow: #b31e92;
+    background: rgba(165, 83, 197, 0.1);
+    font-size: 20px;
+    font-style:oblique;
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin: 10px;
+}
+@keyframes divani {
+0%{
+    transform: scale(1);
+}
+50%{
+    transform: scale(1.01);
+}
+100%{
+    transform: scale(1);
+}
+}

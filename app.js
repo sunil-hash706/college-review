@@ -14,6 +14,9 @@ app.get("/",function(req,res){
   res.sendFile(__dirname+"/index.html");
 })
 
+app.get("/review",function(req,res){
+  res.sendFile(__dirname+"/review.html");
+})
 // mongoose.connect("mongodb://localhost:27017/reviewDB",{useNewUrlParser:true});
 
 
