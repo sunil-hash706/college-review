@@ -19,7 +19,7 @@ window.onscroll = function () {
         myNav.classList.add("nav-colored");
         myNav.classList.remove("nav-transparent");
         myNav.innerHTML = `   <ul>
-        <li><a href="#">HOME</a></li>
+        <li><a href="/">HOME</a></li>
         <li></li>
         <li></li>
         <li></li>
@@ -32,11 +32,11 @@ window.onscroll = function () {
         myNav.classList.add("nav-transparent");
         myNav.classList.remove("nav-colored");
         myNav.innerHTML = `   <ul>
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">COLLEGES</a></li>
-        <li><a href="#">NIRF</a></li>
-        <li><a href="#">REVIEWS</a></li>
-        <li><a href="#">CONTACT US</a></li>
+        <li><a href="/">HOME</a></li>
+        <li><a href="/colleges">COLLEGES</a></li>
+        <li><a href="/">NIRF</a></li>
+        <li><a href="/review">REVIEWS</a></li>
+        <li><a href="/">CONTACT US</a></li>
         
     </ul>
     <div class="line"></div>`;
