@@ -3,6 +3,12 @@ $("#listIit").on("click", function () {
     $("#iitList").slideToggle();
 })
 
+var process = document.getElementById('_progress2');
+setInterval(() => {
+    var scrollTop = $(window).scrollTop();
+    process.style.width=scrollTop+"px";  
+}, 10);
+
 
 
 var myNav = document.getElementById('mynav');

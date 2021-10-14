@@ -6,12 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Review Your college</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/public/css/style.css">
 </head>
 
 <body>
 
+    <div id="_progress1"></div>
+    <div id="_progress2"></div>
 
+</div>
     <nav id="mynav" class="">
         <ul>
             <li><a href="#">HOME</a></li>
@@ -22,11 +25,7 @@
         </ul>
         <div class="line"></div>
     </nav>
-    <!-- <form action="/" method="POST">
-        <input required type="text" name="name" id="nameu" placeholder="Your name here">
-        <textarea required name="message" id="" cols="30" rows="10" placeholder="Enter your review"></textarea>
-        <button>submit</button>
-    </form> -->
+ 
     <div class="box" id="head">
         <h1>REVIEW YOUR COLLEGE</h1>
         <br>
@@ -51,7 +50,7 @@
                         <li>Bachelor of Design (BDes)</li>
                         <li>Joint MSc-PhD</li>
                     </ul>
-                    <ul>
+                    <ul class="pg">
                         <h2>PG</h2>
                         <li>Master of Science (MSc)</li>
                         <li>Dual Degree (MSc-PhD)</li>
@@ -63,7 +62,7 @@
                 <h4 class="re">Research on a perticular college(see reviews given by there own students)
                 </h4>
             </div>
-            <img src="/img/iit.jpg" alt="">
+            <img src="/public/img/iit.jpg" alt="">
         </div>
         <br><br>
         <div class="boxc">
@@ -82,7 +81,7 @@
                         <li>Bachelor of Design (BDes)</li>
                         <li>Joint MSc-PhD</li>
                     </ul>
-                    <ul>
+                    <ul class="pg">
                         <h2>PG</h2>
                         <li>Master of Science (MSc)</li>
                         <li>Dual Degree (MSc-PhD)</li>
@@ -94,7 +93,7 @@
                 <h4 class="re" >Research on a perticular college(see reviews given by there own students)
                 </h4>
             </div>
-            <img src="/img/nit.jfif" alt="">
+            <img src="/public/img/nit.jfif" alt="">
 
         </div>
         <br><br>
@@ -114,7 +113,7 @@
                         <li>Bachelor of Design (BDes)</li>
                         <li>Joint MSc-PhD</li>
                     </ul>
-                    <ul>
+                    <ul class="pg">
                         <h2>PG</h2>
                         <li>Master of Science (MSc)</li>
                         <li>Dual Degree (MSc-PhD)</li>
@@ -126,7 +125,7 @@
                 <h4 class="re">Research on a perticular college(see reviews given by there own students)
                 </h4>
             </div>
-            <img src="/img/iiit.jpg" alt="">
+            <img src="/public/img/iiit.jpg" alt="">
 
         </div>
         <br><br>
@@ -134,8 +133,8 @@
 
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="/js/index.js"></script>
-<script src="/js/vanilla-tilt.js"></script>
+<script src="/public/js/index.js"></script>
+<script src="/public/js/vanilla-tilt.js"></script>
 
 <script>
     VanillaTilt.init(document.querySelector(".box"), {

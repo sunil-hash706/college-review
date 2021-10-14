@@ -4,16 +4,25 @@ form {
     display: flex;
     flex-direction: column;
 }
-
+#_progress1 {
+    position: fixed;
+   background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 3px;
+    top: 0px;
+    z-index: 5;
+}
+#_progress2 {
+    position: fixed;
+    background-color: rgb(160, 22, 22);
+     width: 10%;
+     height: 3px;
+     top: 0px;
+     z-index: 6;
+ }
 * {
     margin: 0;
     padding: 0;
-}
-
-#nameu {
-    margin: 10px;
-    border: 2px solid black;
-    padding: 10px;
 }
 
 textarea {
@@ -37,6 +46,7 @@ button:hover {
 body {
     min-height: 100vh;
     background-color: #161623;
+    scroll-behavior: smooth;
 }
 
 body::before {
@@ -132,6 +142,18 @@ nav ul li a:hover {
     background: rgba(0, 0, 0, 0.1);
     font-size: 20px;
     font-style: oblique;
+    padding: 20px;
+}
+
+.box p {
+    line-height: 1.9em;
+    text-align: left;
+    color: rgb(128, 194, 180);
+}
+
+.box h1 {
+    line-height: 1.9em;
+    text-align: left;
 }
 
 .navbar-fixed-top.scrolled {
@@ -174,7 +196,7 @@ nav ul li a:hover {
 
 .boxc img {
     position: relative;
-    top: -429px;
+    top: -500px;
     width: 100%;
     height: 425px;
     border-radius: 10px;
@@ -186,15 +208,15 @@ nav ul li a:hover {
 
 .boxc div {
     position: relative;
-    top: -100px;
+    top: -130px;
     /* transform: translateX(400px); */
-    transform: translate3d(100px, -100px, 100px);
-    transition: 0.5s;
+    transform: translate3d(20px, -20px, 20px);
+    transition: 1s;
     visibility: hidden;
     font-size: 20px;
-    
 }
-li{
+
+li {
     text-decoration: none;
     list-style: none;
 }
@@ -233,7 +255,7 @@ li{
     z-index: +5;
 }
 
-.cc {
+/* .cc {
     position: relative;
     top: -120px;
     font-size: 22px;
@@ -248,29 +270,43 @@ li{
 .cc:hover {
     transform: translateY(0px);
     opacity: 1;
-}
-#course{
+} */
+
+#course {
     position: relative;
     top: 00px;
     display: flex;
-justify-content: space-between;
+    justify-content: space-between;
+    text-align: left;
+    line-height: 1.5em;
 }
-#coursen{
+
+#coursen {
     position: relative;
     top: 00px;
     display: flex;
-justify-content: space-between;
+    text-align: left;
+    justify-content: space-between;
+    line-height: 1.5em;
 }
-#coursei{
+
+#coursei {
     position: relative;
     top: 00px;
     display: flex;
-justify-content: space-between;
+    text-align: left;
+    justify-content: space-between;
+    line-height: 1.5em;
 }
-.re{
-    cursor: pointer; 
-     position: relative;
-      top: 30px;
-      transform: scale(1.1);
-      color: #a152c0;
+
+.pg {
+    text-align: right;
+}
+
+.re {
+    cursor: pointer;
+    position: relative;
+    top: 30px;
+    transform: scale(1.1);
+    color: #e5ff00;
 }
