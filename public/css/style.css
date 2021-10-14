@@ -212,7 +212,7 @@ li{
 .boxc:hover img {
     position: relative;
     top: -490px;
-    left: -300px;
+    left: -370px;
     width: 30%;
     height: 150px;
     border-radius: 10px;
@@ -248,4 +248,29 @@ li{
 .cc:hover {
     transform: translateY(0px);
     opacity: 1;
+}
+#course{
+    position: relative;
+    top: 00px;
+    display: flex;
+justify-content: space-between;
+}
+#coursen{
+    position: relative;
+    top: 00px;
+    display: flex;
+justify-content: space-between;
+}
+#coursei{
+    position: relative;
+    top: 00px;
+    display: flex;
+justify-content: space-between;
+}
+.re{
+    cursor: pointer; 
+     position: relative;
+      top: 30px;
+      transform: scale(1.1);
+      color: #a152c0;
 }
