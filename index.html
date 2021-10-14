@@ -6,21 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Review Your college</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/public/css/style.css">
 </head>
 
 <body>
 
 
-    <nav id="mynav" class=""> 
-    <ul>
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">COLLEGES</a></li>
-        <li><a href="#">NIRF</a></li>
-        <li><a href="/review">REVIEWS</a></li>
-        <li><a href="#">CONTACT US</a></li>
-    </ul>
-    <div class="line"></div>
+    <nav id="mynav" class="">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">COLLEGES</a></li>
+            <li><a href="#">NIRF</a></li>
+            <li><a href="/review">REVIEWS</a></li>
+            <li><a href="#">CONTACT US</a></li>
+        </ul>
+        <div class="line"></div>
     </nav>
     <!-- <form action="/" method="POST">
         <input required type="text" name="name" id="nameu" placeholder="Your name here">
@@ -30,35 +30,86 @@
     <div class="box" id="head">
         <h1>REVIEW YOUR COLLEGE</h1>
         <br>
-        <p>We belive that reviews of colleges given by there own students are always batter then others, So we building this website for taking reviews of IITS NITS and IIITS all around india by there own students </p>
+        <p>We belive that reviews of colleges given by there own students are always batter then others, So we building
+            this website for taking reviews of IITS NITS and IIITS all around india by there own students </p>
     </div>
-<br><br><br>
+    <br><br><br>
     <div class="colleges">
         <div class="boxc">
             <h1>IITS</h1>
-            <p>The Indian Institutes of Technology (IITs) are autonomous public technical universities located across India. It is under the jurisdiction of Ministry of Education , Government of India. They are governed by the Institutes of Technology Act, 1961, which has declared them as Institutes of National Importance and lays down their powers, duties, and framework for governance.</p>
+            <div>
+                <h2>Indian institute of technology</h2>
+                <h4>Number of colleges :- 23</h4>
+                <h4>Courses offered</h4>
+                <ul>
+                    <li>....</li>
+                    <li>....</li>
+                    <li>....</li>
+                    <li>....</li>
+                    <li>....</li>
+                    <li>....</li>
+                </ul>
+                <h4 style="cursor: pointer;">Research on a perticular college(see reviews given by there own students)</h4>
+            </div>
+            <img src="/public/img/iit.jpg" alt="">
         </div>
+<br><br>
         <div class="boxc">
             <h1>NITS</h1>
-            <p>The National Institutes of Technology (NITs) are the premier autonomous public technical universities under the jurisdiction of Ministry of Education, Government of India. They are governed by the National Institutes of Technology, Science Education and Research Act, 2007, which declared them as institutions of national importance and lays down their powers, duties, and framework for governance.</p>
+            <div>
+                <h2>National institute of technology</h2>
+                <h4>Number of colleges :- 23</h4>
+                <h4>Courses offered</h4>
+                <ul>
+                    <li>....</li>
+                    <li>....</li>
+                    <li>....</li>
+                    <li>....</li>
+                    <li>....</li>
+                    <li>....</li>
+                </ul>
+                <h4 style="cursor: pointer;">Research on a perticular college(see reviews given by there own students)</h4>
+            </div>
+            <img src="/public/img/nit.jfif" alt="">
+           
         </div>
+        <br><br>
         <div class="boxc">
             <h1>IIITS</h1>
-            <p>In 2013 the Indian Institutes of Information Technology Bill 2013 was introduced in Lok Sabha.[citation needed][2] The bill sought to grants the status of Institutes of National Importance (INI) upon the four IIITs. After much debate and changes, the bill was passed by the Parliament on 1 December 2014[citation needed] and published as Indian Institutes of Information Technology Act, 2014 on 8 December 2014, coming into effect on 5 January 2015</p>
+            <div>
+                <h2>Indian institute of information technology</h2>
+                <h4>Number of colleges :- 23</h4>
+                <h4>Courses offered</h4>
+                <ul>
+                    <li>....</li>
+                    <li>....</li>
+                    <li>....</li>
+                    <li>....</li>
+                    <li>....</li>
+                    <li>....</li>
+                </ul>
+                <h4 style="cursor: pointer;">Research on a perticular college(see reviews given by there own students)</h4>
+            </div>
+            <img src="/public/img/iiit.jpg" alt="">
+
         </div>
+        <br><br>
     </div>
-    
+
 </body>
-<script src="/js/index.js"></script>
-<script src="/js/vanilla-tilt.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/public/js/index.js"></script>
+<script src="/public/js/vanilla-tilt.js"></script>
+
 <script>
     VanillaTilt.init(document.querySelector(".box"), {
-		max: 25,
-		speed: 400
-	});
+        max: 15,
+        speed: 100
+    });
     VanillaTilt.init(document.querySelectorAll(".boxc"), {
-		max: 25,
-		speed: 400
-	});
+        max: 5,
+        speed: 100
+    });
 </script>
+
 </html>

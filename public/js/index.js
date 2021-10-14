@@ -1,3 +1,10 @@
+$("#iitList").slideUp();
+$("#listIit").on("click", function () {
+    $("#iitList").slideToggle();
+})
+
+
+
 var myNav = document.getElementById('mynav');
 window.onscroll = function () {
     "use strict";
@@ -32,15 +39,19 @@ window.onscroll = function () {
 
 
 
-setInterval(() => {
+var ct = "k";
+function fn1() {
     var collegeType = document.getElementById('colleges').value;
     var collegeName = document.getElementById('clgname');
 
 
-    if (collegeType == "IIT") {
+    if (ct != collegeType) {
 
-        // console.log("iit");
-        collegeName.innerHTML = ` <option value="IIT">IIT Bombay</option>
+
+        if (collegeType == "IIT") {
+
+
+            collegeName.innerHTML = ` <option value="IIT">IIT Bombay</option>
         <option value="NIT">IIT Madras</option>
         <option value="IIIT">IIT Delhi</option>
         <option value="IIIT">IIT Kharagpur</option>
@@ -63,10 +74,9 @@ setInterval(() => {
         <option value="IIIT">IIT Bhilai</option>
         <option value="IIIT">IIT Goa</option>
         <option value="IIIT">IIT Jammu</option>`
-    }
-    else if(collegeType=="NIT"){
-        // console.log("nit");
-        collegeName.innerHTML = `
+        }
+        else if (collegeType == "NIT") {
+            collegeName.innerHTML = `
         <option value="IIT">NIT Trichy</option>
         <option value="NIT">NIT Karnataka</option>
         <option value="IIIT">NIT Rourkela</option>
@@ -98,9 +108,9 @@ setInterval(() => {
         <option value="IIIT">NIT Nagaland</option>
         <option value="IIIT">NIT Sikkim</option>
         <option value="IIIT">NIT Andhra Pradesh</option>`
-    }
-    else{
-        collegeName.innerHTML = `
+        }
+        else {
+            collegeName.innerHTML = `
         <option value="IIT">IIIT Hyderabad</option>
         <option value="NIT">IIIT Bangalore</option>
         <option value="IIIT">IIIT Guwahati</option>
@@ -129,6 +139,7 @@ setInterval(() => {
         <option value="IIIT">IIIT Sonepat</option>
         <option value="IIIT">IIIT Agartala</option>
         <option value="IIIT">IIIT Karnataka</option>`
+        }
+        ct = collegeType;
     }
-}, 1000);
-
+}

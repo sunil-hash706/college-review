@@ -1,24 +1,28 @@
-form{
+form {
     width: 400px;
     margin: auto;
     display: flex;
     flex-direction: column;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
-#nameu{
+
+#nameu {
     margin: 10px;
     border: 2px solid black;
     padding: 10px;
 }
-textarea{
+
+textarea {
     margin: 10px;
     border: 2px solid black;
     padding: 10px;
 }
-button{
+
+button {
     width: 100px;
     margin: auto;
     padding: 10px;
@@ -26,74 +30,82 @@ button{
     border-radius: 5px;
 }
 
-button:hover{
+button:hover {
     background-color: rgb(52, 180, 52);
 }
-body{
-    
+
+body {
     min-height: 100vh;
     background-color: #161623;
 }
-body::before{
+
+body::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(#f00,#f0f);
+    background: linear-gradient(#f00, #f0f);
     clip-path: circle(23% at right 55%);
 }
-body::after{
+
+body::after {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(#2196f3,#e91e63);
+    background: linear-gradient(#2196f3, #e91e63);
     clip-path: circle(20% at 10% 10%);
 }
 
-nav{
-
+nav {
     position: fixed;
     left: 0;
     right: 0;
     height: 50px;
     z-index: +1;
     width: 100%;
-    
 }
-nav:hover{
+
+nav:hover {
     transform: scale(1.01);
 }
-.nav-transparent{
+
+.nav-transparent {
     box-sizing: border-box;
     background-color: transparent;
 }
-.nav-colored{
+
+.nav-colored {
     background-color: black;
     box-shadow: 5px #b31e92;
     box-sizing: border-box;
 }
-nav ul{
+
+nav ul {
     display: flex;
     justify-content: space-around;
 }
-nav ul li{
+
+nav ul li {
     list-style: none;
     text-decoration: none;
     margin-top: 20px;
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
     color: whitesmoke;
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
     text-decoration: underline 5px solid rgb(187, 61, 212);
 }
-.line{
+
+.line {
     position: absolute;
     background-color: white;
     height: 3px;
@@ -102,7 +114,8 @@ nav ul li a:hover{
     top: 47px;
     left: 10%;
 }
-.box{
+
+.box {
     top: 200px;
     position: relative;
     width: 50%;
@@ -118,62 +131,121 @@ nav ul li a:hover{
     border-right: 5px solid white;
     background: rgba(0, 0, 0, 0.1);
     font-size: 20px;
-    font-style:oblique;
+    font-style: oblique;
 }
-
 
 .navbar-fixed-top.scrolled {
     background-color: #fff !important;
     transition: background-color 200ms linear;
-  }
-  .colleges{
-      position: relative;
-      display: flex;
-      flex-wrap: wrap;
-      width: 80%;
-      margin: auto;
-      align-items: center;
-      text-align: center;
-      justify-content: center;
-  }
-  .boxc{
+}
+
+.colleges {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.colleges ul {}
+
+.boxc {
     top: 200px;
     position: relative;
-    width: 400px;
-    height: 500px;
+    width: 70%;
+    height: 430px;
     text-align: center;
     align-items: center;
     box-sizing: border-box;
-    margin: 10px;
+    margin-top: 60px;
     z-index: +1;
     color: rgb(248, 248, 248);
     padding: 20px;
     box-shadow: #b31e92;
-    background: rgba(241, 245, 0, 0.1);
+    background: rgba(255, 255, 255, 0.5);
     font-size: 20px;
-    font-style:oblique;
+    font-style: oblique;
     align-items: center;
     box-shadow: 2px 5px #a152c0;
 }
-.colleges div h1{
-    font-size: 150px;
-    color: rgba(148, 142, 142, 0.5);
+
+.boxc img {
     position: relative;
-    top: 120px;
+    top: -429px;
+    width: 100%;
+    height: 425px;
+    border-radius: 10px;
+    transition: 0.5s;
+    box-shadow: 20px 20px 30px rgba(1, 2, 1, 0.5);
+    filter: blur(1px);
+    border-left: 5px rgba(1, 1, 1, 0.5);
 }
 
-.colleges div p{
+.boxc div {
     position: relative;
-    top: -70px;
+    top: -100px;
+    /* transform: translateX(400px); */
+    transform: translate3d(100px, -100px, 100px);
+    transition: 0.5s;
+    visibility: hidden;
+    font-size: 20px;
+    
+}
+li{
+    text-decoration: none;
+    list-style: none;
+}
+
+.boxc:hover div {
+    visibility: visible;
+    transform: translate3d(0px, 0px, 0px);
+    color: #ffffff;
+}
+
+.boxc:hover {
+    background: rgba(51, 49, 49, 0.1);
+}
+
+.boxc:hover img {
+    position: relative;
+    top: -490px;
+    left: -300px;
+    width: 30%;
+    height: 150px;
+    border-radius: 10px;
+    border: 2px solid rgba(1, 1, 1, 0.2);
+    transition: 1s;
+    box-shadow: 20px 20px 30px rgba(1, 2, 1, 0.5);
+    filter: blur(0px);
+}
+
+.boxc:hover h1 {
+    color: rgba(110, 106, 106, 0.5);
+}
+
+.colleges div h1 {
+    font-size: 150px;
+    color: rgba(0, 0, 0, 0.7);
+    position: relative;
+    z-index: +5;
+}
+
+.cc {
+    position: relative;
+    top: -120px;
     font-size: 22px;
-    font-weight:bold;
-    transform:translateY(-100px);
+    font-weight: bold;
+    transform: translateY(-100px);
     transition: 0.5s;
     opacity: 0;
     height: 100%;
     width: 100%;
 }
-.colleges div p:hover{
-    transform:translateY(0px);
+
+.cc:hover {
+    transform: translateY(0px);
     opacity: 1;
 }
