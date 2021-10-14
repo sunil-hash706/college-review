@@ -115,15 +115,15 @@ nav ul li a:hover {
     text-decoration: underline 5px solid rgb(187, 61, 212);
 }
 
-.line {
+/* .line {
     position: absolute;
     background-color: white;
     height: 3px;
     width: 80%;
-    /* margin: auto; */
+    margin: auto;
     top: 47px;
     left: 10%;
-}
+} */
 
 .box {
     top: 200px;
