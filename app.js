@@ -14,6 +14,10 @@ app.get("/",function(req,res){
   res.sendFile(__dirname+"/index.html");
 })
 
+app.get("/colleges",function(req,res){
+  res.sendFile(__dirname+"/colleges.html");
+})
+
 app.get("/review",function(req,res){
   res.sendFile(__dirname+"/review.html");
 })

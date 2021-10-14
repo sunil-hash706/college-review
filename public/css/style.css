@@ -172,7 +172,7 @@ nav ul li a:hover {
     justify-content: center;
 }
 
-.colleges ul {}
+
 
 .boxc {
     top: 200px;
@@ -309,4 +309,44 @@ li {
     top: 30px;
     transform: scale(1.1);
     color: #e5ff00;
+}
+
+
+/* colleges.html */
+
+.boxd{
+    position: relative;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+    top: 100px;
+    z-index: 1;
+    padding: 10px;
+
+}
+.boxd h1{
+    font-size: 3em;
+    color: rgba(201, 195, 195, 0.7);
+    text-align: center;
+}
+.boxd ul li{
+    color: white;
+    cursor: pointer;
+}
+.boxd ul li:hover{
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.boxl{
+    width: 100%;
+    background-color: rgba(1, 1, 1, 0.7);
+    margin-top: 10px;
+    padding: 20px;
+    line-height: 2em;
+}
+
+.flexbox{
+    display: flex;
+    justify-content: space-between;
 }
