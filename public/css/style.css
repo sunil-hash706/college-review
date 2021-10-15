@@ -46,7 +46,9 @@ button:hover {
 
 body {
     min-height: 100vh;
-    background-color: #3c096c;
+
+    background-color: #cf1ea6;
+
     scroll-behavior: smooth;
 }
 
@@ -87,11 +89,12 @@ nav:hover {
 
 .nav-transparent {
     box-sizing: border-box;
+    background-color: rgba(44, 44, 46, 0.8);
     background-color: transparent;
 }
 
 .nav-colored {
-    background-color: black;
+    background-color: rgba(42, 43, 49, 0.8);
     box-shadow: 5px #b31e92;
     box-sizing: border-box;
 }
@@ -114,9 +117,11 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-/*     text-decoration: underline 5px solid rgb(187, 61, 212); */
-     border-bottom: 2.5px solid black;
-     color: white;
+
+    /* text-decoration: underline 5px solid rgb(187, 61, 212); */
+    border-bottom: 2.5px solid black;
+    color: white;
+
 }
 
 /* .line {
@@ -143,7 +148,7 @@ nav ul li a:hover {
     border-bottom: 5px solid white;
     box-shadow: #b31e92;
     border-right: 5px solid white;
-    background: rgba(0, 0, 0, 0.1);
+    background: linear-gradient(rgb(11, 32, 129), rgb(175, 13, 175));
     font-size: 20px;
     font-style: oblique;
     padding: 20px;
@@ -191,7 +196,7 @@ nav ul li a:hover {
     color: rgb(248, 248, 248);
     padding: 20px;
     box-shadow: #b31e92;
-    background: rgba(255, 255, 255, 0.5);
+    background: linear-gradient(rgb(13, 35, 131), rgb(161, 15, 161));
     font-size: 20px;
     font-style: oblique;
     align-items: center;
@@ -231,14 +236,11 @@ li {
     color: #ffffff;
 }
 
-.boxc:hover {
-    background: rgba(51, 49, 49, 0.1);
-}
 
 .boxc:hover img {
     position: relative;
-    top: -490px;
-    left: -370px;
+    top: -570px;
+    left: -400px;
     width: 30%;
     height: 150px;
     border-radius: 10px;
@@ -249,7 +251,9 @@ li {
 }
 
 .boxc:hover h1 {
-    color: rgba(110, 106, 106, 0.5);
+  
+    transform: translate3d(350px,-90px,100px);
+    transition: 1s;
 }
 
 .colleges div h1 {
