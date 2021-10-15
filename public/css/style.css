@@ -46,7 +46,10 @@ button:hover {
 
 body {
     min-height: 100vh;
+    overflow-x: hidden;
+
     background-color: #cf1ea6;
+
     scroll-behavior: smooth;
 }
 
@@ -115,9 +118,11 @@ nav ul li a {
 }
 
 nav ul li a:hover {
+
     /* text-decoration: underline 5px solid rgb(187, 61, 212); */
     border-bottom: 2.5px solid black;
     color: white;
+
 }
 
 /* .line {
