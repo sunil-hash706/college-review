@@ -149,3 +149,9 @@ function fn1() {
         ct = collegeType;
     }
 }
+
+
+
+
+var clg = document.getElementById('colleges');
+console.log(clg);

@@ -18,8 +18,27 @@ app.get("/colleges",function(req,res){
   res.sendFile(__dirname+"/colleges.html");
 })
 
+
+
+
 app.get("/review",function(req,res){
   res.sendFile(__dirname+"/review.html");
+})
+
+
+
+
+app.post("/review",function(req,res){
+  let name = req.body.name;
+  let year = req.body.year;
+  let review = req.body.review;
+  let collegeType = req.body.typcol;
+  let college = req.body.col;
+  console.log(collegeType);
+  console.log(college);
+  
+
+  res.send("Hii thanku for reviewing "+ "name "+ name+"   "+year + "  review "+ review +"  "+college +"  "+ collegeType);
 })
 // mongoose.connect("mongodb://localhost:27017/reviewDB",{useNewUrlParser:true});
 
@@ -46,10 +65,10 @@ app.get("/review",function(req,res){
 
 // app.post("/",function(req,res){
  
-//   let name = req.body.name;
-//   let message = req.body.message;
+  // let name = req.body.name;
+  // let message = req.body.message;
 
-//   res.send("Hii thanku for reviewing "+ "name "+ name + "  review "+ message);
+  // res.send("Hii thanku for reviewing "+ "name "+ name + "  review "+ message);
 // })
 app.listen(process.env.PORT || 3000, function(){
   console.log("server started at port 3000")
