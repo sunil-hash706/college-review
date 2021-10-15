@@ -4,7 +4,7 @@ h2{
     font-size: 22px;
     color: white;
     box-sizing: border-box;
-    background-color: rgba(1, 1, 1, 0.5);
+    background: linear-gradient(rgb(199, 30, 233), rgb(192, 61, 83));
     z-index: +1;
     top: 150px;
     margin: auto;
@@ -22,7 +22,9 @@ input{
     border-bottom: 2px solid rgba(0, 0, 0, 0.5);
     padding: 2px;
 }
-
+textarea{
+    padding: 2px;
+}
 
 .boxr{
     top: 200px;
@@ -36,7 +38,8 @@ input{
     color: rgb(248, 248, 248);
     padding: 20px;
     box-shadow: #b31e92;
-    background: rgba(165, 83, 197, 0.1);
+    background: linear-gradient(rgb(30, 67, 233), #f0f);
+
     font-size: 20px;
     font-style:oblique;
     display: flex;
