@@ -6,7 +6,7 @@ $("#listIit").on("click", function () {
 var process = document.getElementById('_progress2');
 setInterval(() => {
     var scrollTop = $(window).scrollTop();
-    process.style.width=scrollTop+"px";  
+    process.style.width=scrollTop+"%";  
 }, 10);
 
 
