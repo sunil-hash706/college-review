@@ -29,6 +29,11 @@ app.get("/review",function(req,res){
   res.sendFile(__dirname+"/review.html");
 })
 
+app.get("/about",function(req,res){
+  res.sendFile(__dirname+"/about.html");
+})
+
+
 
 
 
