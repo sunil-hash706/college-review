@@ -5,9 +5,51 @@ const mongoose = require('mongoose');
 
 const app = express();
 
-
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
+
+main().catch(err => console.log(err));
+
+async function main() {
+  await mongoose.connect('mongodb+srv://admin-sunil:CodeKni8z@cluster0.z0shg.mongodb.net/ReviewDB');
+}
+
+const reviewSchema = new mongoose.Schema({
+  name: String,
+  review: String,
+  year: Number,
+  collegeType: String,
+  collegeName:String
+});
+
+const Review = mongoose.model('Review', reviewSchema);
+
+app.post("/review",function(req,res){
+   var nu= req.body.name;
+   var ct = req.body.colleges;
+   var cn = req.body.clgname;
+   var yr = req.body.year;
+   var rw = req.body.review;
+
+
+   console.log(nu + " " + rw +" " + yr +" " + ct +" " +cn);
+
+   const review1 = new Review({
+    name: nu,
+    review:rw,
+    year:yr,
+    collegeType:ct,
+    collegeName:cn
+    });
+ 
+ review1.save();
+
+ res.send("your review successfully accepted keep reviewing keep helping");
+})
+
+
+
+
 
 
 app.get("/",function(req,res){
@@ -35,50 +77,6 @@ app.get("/about",function(req,res){
 
 
 
-
-
-app.post("/review",function(req,res){
-  let name = req.body.name;
-  let year = req.body.year;
-  let review = req.body.review;
-  let collegeType = req.body.typcol;
-  let college = req.body.col;
-  console.log(collegeType);
-  console.log(college);
-  
-
-  res.send("Hii thanku for reviewing "+ "name "+ name+"   "+year + "  review "+ review +"  "+college +"  "+ collegeType);
-})
-// mongoose.connect("mongodb://localhost:27017/reviewDB",{useNewUrlParser:true});
-
-
-// const reviewSchema = {
-//   name:String,
-//   review:String
-// }
-
-// const Review = mongoose.model("Review","reviewSchema");
-
-// const review1 = new Review({
-//   name:"sunil",
-//   message:"super"
-// })
-// const review1 = new Review({
-//   name:"anil",
-//   message:"duper"
-// })
-// const review1 = new Review({
-//   name:"shahil",
-//   message:"buper"
-// })
-
-// app.post("/",function(req,res){
- 
-  // let name = req.body.name;
-  // let message = req.body.message;
-
-  // res.send("Hii thanku for reviewing "+ "name "+ name + "  review "+ message);
-// })
 app.listen(process.env.PORT || 3000, function(){
   console.log("server started at port 3000")
 })
@@ -89,26 +87,3 @@ app.listen(process.env.PORT || 3000, function(){
 
 
 
-
-
-
-
-// main().catch(err => console.log(err));
-
-// async function main() {
-//   await mongoose.connect('mongodb://localhost:27017/reviewsDB');
-// }
-
-// const reviewSchema= new mongoose.Schema({
-//     name:String,
-//     email:String,
-//     reviewp:String
-// });
-
-// const Review = mongoose.model("Review",reviewSchema);
-
-// const review = new Review({
-//     name: "Sunil Kumar",
-//     email:"sunilachra121@gmail.com",
-//     reviewp:"sdfhldkfzkv"
-// }) 
