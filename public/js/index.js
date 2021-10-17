@@ -1,47 +1,44 @@
-$("#iitList").slideUp();
-$("#listIit").on("click", function () {
-    $("#iitList").slideToggle();
-})
 
-var process = document.getElementById('_progress2');
-setInterval(() => {
-    var scrollTop = $(window).scrollTop();
-    process.style.width=scrollTop+"%";  
-}, 10);
+
+// var process = document.getElementById('_progress2');
+// setInterval(() => {
+//     var scrollTop = $(window).scrollTop();
+//     process.style.width=scrollTop+"%";  
+// }, 10);
 
 
 
-var myNav = document.getElementById('mynav');
-window.onscroll = function () {
-    "use strict";
-    if (document.documentElement.scrollTop >= 50) {
+// var myNav = document.getElementById('mynav');
+// window.onscroll = function () {
+//     "use strict";
+//     if (document.documentElement.scrollTop >= 50) {
 
-        myNav.classList.add("nav-colored");
-        myNav.classList.remove("nav-transparent");
-        myNav.innerHTML = `   <ul>
-        <li><a href="/">HOME</a></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
-    <div class="line"></div>
-    `;
-    }
-    else {
-        myNav.classList.add("nav-transparent");
-        myNav.classList.remove("nav-colored");
-        myNav.innerHTML = `   <ul>
-        <li><a href="/">HOME</a></li>
-        <li><a href="/colleges">COLLEGES</a></li>
-        <li><a href="/">NIRF</a></li>
-        <li><a href="/review">REVIEWS</a></li>
-        <li><a href="/about">ABOUT US</a></li>
+//         myNav.classList.add("nav-colored");
+//         myNav.classList.remove("nav-transparent");
+//         myNav.innerHTML = `   <ul>
+//         <li><a href="/">HOME</a></li>
+//         <li></li>
+//         <li></li>
+//         <li></li>
+//         <li></li>
+//     </ul>
+//     <div class="line"></div>
+//     `;
+//     }
+//     else {
+//         myNav.classList.add("nav-transparent");
+//         myNav.classList.remove("nav-colored");
+//         myNav.innerHTML = `   <ul>
+//         <li><a href="/">HOME</a></li>
+//         <li><a href="/colleges">COLLEGES</a></li>
+//         <li><a href="/">NIRF</a></li>
+//         <li><a href="/review">REVIEWS</a></li>
+//         <li><a href="/about">ABOUT US</a></li>
         
-    </ul>
-    <div class="line"></div>`;
-    }
-};
+//     </ul>
+//     <div class="line"></div>`;
+//     }
+// };
 
 
 
@@ -153,5 +150,5 @@ function fn1() {
 
 
 
-var clg = document.getElementById('colleges');
-console.log(clg);
+// var clg = document.getElementById('colleges');
+// console.log(clg);
