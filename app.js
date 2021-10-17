@@ -44,7 +44,7 @@ app.post("/review",function(req,res){
  
  review1.save();
 
- res.send("your review successfully accepted keep reviewing keep helping");
+ res.sendFile(__dirname+"/thanku.html");
 })
 
 
